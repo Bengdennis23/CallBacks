@@ -10,6 +10,17 @@ problem.
 
 Examples:
 
+
+*******************************************************************************/
+
+function reject(array, cb) {
+  let arr = []
+  for(let ele of array){
+    if(!cb(ele)) arr.push(ele)
+  }
+  return arr
+}
+
 let isEven = function(n) {
     return n % 2 === 0;
 };
@@ -19,12 +30,6 @@ let hasA = function(s) {
     return s.toLowerCase().includes('a');
 };
 console.log(reject(['breadth', 'GRAPH', 'depth', 'height'], hasA)); // [ 'depth', 'height' ]
-*******************************************************************************/
-
-function reject(array, cb) {
-  // Your code here 
-}
-
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
   module.exports = reject;
