@@ -18,7 +18,7 @@ Examples:
 // }
 
 function myEvery(array, cb) {
-    
+
 }
 
 let isEven = function (num) {
