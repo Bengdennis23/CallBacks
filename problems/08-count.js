@@ -5,6 +5,21 @@ passed to the callback.
 
 Examples:
 
+
+*******************************************************************************/
+
+// function count(array, cb) {
+//   let count = 0
+//   for(let ele of array){
+//     if(cb(ele)) count++
+//   }
+//   return count
+// }
+
+function count(array, cb) {
+ 
+}
+
 let result1 = count([18, 5, 32, 7, 100], function (n) {
     return n % 2 === 0;
 });
@@ -24,12 +39,6 @@ let result4 = count(['follow', 'the', 'yellow', 'brick', 'road'], function (str)
     return str.includes('x');
 });
 console.log(result4); // 0
-*******************************************************************************/
-
-function count(array, cb) {
-  // Your code here 
-}
-
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
   module.exports = count;
