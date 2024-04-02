@@ -8,6 +8,18 @@ Do not use the built in Array.filter.
 
 Examples:
 
+
+*******************************************************************************/
+
+function myFilter(array, cb) {
+    let benjamin = []
+    for(let i = 0; i < array.length; i++){
+        let ele = array[i]
+        if(cb(ele)) benjamin.push(ele)
+    }
+    return benjamin
+}
+
 let result1 = myFilter([5, 7, 4, 3, 8], function (n) {
     return n % 2 === 0;
 });
@@ -17,11 +29,6 @@ let result2 = myFilter(['choose', 'big', 'words', 'only'], function (s) {
     return s.length > 3;
 });
 console.log(result2);      // ['choose', 'words', 'only']
-*******************************************************************************/
-
-function myFilter(array, cb) {
-    // Your code here 
-}
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
