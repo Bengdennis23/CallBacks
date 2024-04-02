@@ -9,8 +9,29 @@ Examples:
 
 *******************************************************************************/
 
+// function minValueCallback(array, cb) {
+//     let lowest = Math.min(...array)
+//     if(cb === undefined){
+//       return lowest
+//     }else{
+//       return cb(lowest)
+//     }
+// }
+
+// function minValueCallback(array, cb) {
+//   let lowest = array[0]
+//   for(let ele of array){
+//     if(ele < lowest) lowest = ele
+//   }
+//   if(cb === undefined){
+//     return lowest
+//   }else{
+//     return cb(lowest)
+//   }
+// }
+
 function minValueCallback(array, cb) {
-    // Your code here
+  
 }
 
 console.log(minValueCallback([64, 25, 49, 9, 100]));             // 9
