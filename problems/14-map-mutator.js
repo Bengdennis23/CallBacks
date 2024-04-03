@@ -8,14 +8,14 @@ Examples:
 
 *******************************************************************************/
 
-// function mapMutator(array, cb) {
-//   for(let i = 0; i < array.length; i++){
-//     array.splice(i, 1, cb(array[i], i))
-//   }
-// }
 function mapMutator(array, cb) {
-  
+  for(let i = 0; i < array.length; i++){
+    array.splice(i, 1, cb(array[i], i))
+  }
 }
+// function mapMutator(array, cb) {
+
+// }
 
 let arr1 = [4, 2, 6, 5];
 mapMutator(arr1, function (el) {

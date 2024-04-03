@@ -8,21 +8,21 @@ Examples:
 
 *******************************************************************************/
 
-// let xorSelect = function(array, cb1, cb2) {
-//   let arr = []
-//   for(let ele of array){
-//     if(cb1(ele) === true && cb2(ele) === false){
-//         arr.push(ele)
-//     }else if(cb1(ele) === false && cb2(ele) === true){
-//       arr.push(ele)
-//     }
-//   }
-//   return arr
-// };
-
 let xorSelect = function(array, cb1, cb2) {
-  
+  let arr = []
+  for(let ele of array){
+    if(cb1(ele) === true && cb2(ele) === false){
+        arr.push(ele)
+    }else if(cb1(ele) === false && cb2(ele) === true){
+      arr.push(ele)
+    }
+  }
+  return arr
 };
+
+// let xorSelect = function(array, cb1, cb2) {
+
+// };
 
 let isEven = function(n) {
   return n % 2 === 0;

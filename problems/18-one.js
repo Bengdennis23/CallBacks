@@ -9,18 +9,18 @@ Examples:
 
 *******************************************************************************/
 
-// function one(array, cb) {
-//   let count = 0
-//   for(let i = 0; i < array.length; i++){
-//     if(cb(array[i], i)) count++
-//   }
-//   if(count === 1) return true
-//   return false
-// }
-
 function one(array, cb) {
-  
+  let count = 0
+  for(let i = 0; i < array.length; i++){
+    if(cb(array[i], i)) count++
+  }
+  if(count === 1) return true
+  return false
 }
+
+// function one(array, cb) {
+
+// }
 let result1 = one(['x', 'y', 'z'], function(el) {
     return el === 'a';
 });

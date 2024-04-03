@@ -13,16 +13,16 @@ Examples:
 
 *******************************************************************************/
 
-// function chainMap(val, ...callbacks) {
-//   for(let cb of callbacks){
-//       val = cb(val)
-//   }
-//   return val
-// }
-
 function chainMap(val, ...callbacks) {
- 
+  for(let cb of callbacks){
+      val = cb(val)
+  }
+  return val
 }
+
+// function chainMap(val, ...callbacks) {
+
+// }
 
 let add5 = function(n) {
     return n + 5;

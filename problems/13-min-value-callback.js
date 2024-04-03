@@ -9,14 +9,14 @@ Examples:
 
 *******************************************************************************/
 
-// function minValueCallback(array, cb) {
-//     let lowest = Math.min(...array)
-//     if(cb === undefined){
-//       return lowest
-//     }else{
-//       return cb(lowest)
-//     }
-// }
+function minValueCallback(array, cb) {
+    let lowest = Math.min(...array)
+    if(cb === undefined){
+      return lowest
+    }else{
+      return cb(lowest)
+    }
+}
 
 // function minValueCallback(array, cb) {
 //   let lowest = array[0]
@@ -30,9 +30,9 @@ Examples:
 //   }
 // }
 
-function minValueCallback(array, cb) {
-  
-}
+// function minValueCallback(array, cb) {
+
+// }
 
 console.log(minValueCallback([64, 25, 49, 9, 100]));             // 9
 console.log(minValueCallback([64, 25, 49, 9, 100], Math.sqrt));  // 3

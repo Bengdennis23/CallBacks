@@ -8,17 +8,17 @@ Examples:
 
 *******************************************************************************/
 
-// function greaterCallbackValue(val, cb1, cb2) {
-//   if(cb1(val) > cb2(val)){
-//     return cb1(val)
-//   }else{
-//     return cb2(val)
-//   }
-// }
-
 function greaterCallbackValue(val, cb1, cb2) {
-
+  if(cb1(val) > cb2(val)){
+    return cb1(val)
+  }else{
+    return cb2(val)
+  }
 }
+
+// function greaterCallbackValue(val, cb1, cb2) {
+
+// }
 
 let doubler = function (n) {
     return 2 * n;

@@ -13,17 +13,17 @@ Examples:
 
 *******************************************************************************/
 
-// function mySimpleReduce(array, cb) {
-//  let sum = array[0]
-//  for(let i = 1; i < array.length; i++){
-//     sum = cb(sum, array[i])
-//  }
-//  return sum
-// }
-
 function mySimpleReduce(array, cb) {
-
+ let sum = array[0]
+ for(let i = 1; i < array.length; i++){
+    sum = cb(sum, array[i])
  }
+ return sum
+}
+
+// function mySimpleReduce(array, cb) {
+
+//  }
 
 let result1 = mySimpleReduce([5, 3, 2, 4], function(sum, el) {
     return sum + el;

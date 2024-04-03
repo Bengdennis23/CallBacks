@@ -15,21 +15,21 @@ Examples:
 
 *******************************************************************************/
 
-// function alternatingMap(array, cb1, cb2) {
-//   let arr = []
-//   for(let i = 0; i < array.length; i++){
-//     if(i % 2 === 0){
-//       arr.push(cb1(array[i]))
-//     }else{
-//       arr.push(cb2(array[i]))
-//     }
-//   }
-//   return arr
-// }
-
 function alternatingMap(array, cb1, cb2) {
-
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    if(i % 2 === 0){
+      arr.push(cb1(array[i]))
+    }else{
+      arr.push(cb2(array[i]))
+    }
+  }
+  return arr
 }
+
+// function alternatingMap(array, cb1, cb2) {
+
+// }
 
 let triple = function (n) {
     return 3 * n;

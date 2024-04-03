@@ -9,18 +9,18 @@ Examples:
 
 *******************************************************************************/
 
-// function exactly(array, num, cb) {
-//   let count = 0
-//   for(let ele of array){
-//     if(cb(ele)) count++
-//   }
-//   if(count === num) return true
-//   return false
-// }
-
 function exactly(array, num, cb) {
-  
+  let count = 0
+  for(let ele of array){
+    if(cb(ele)) count++
+  }
+  if(count === num) return true
+  return false
 }
+
+// function exactly(array, num, cb) {
+
+// }
 
 let result1 = exactly([18, 5, 32, 7, 100], 3, function (n) {
     return n % 2 === 0;

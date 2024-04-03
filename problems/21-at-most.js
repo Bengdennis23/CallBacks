@@ -8,18 +8,18 @@ Examples:
 
 *******************************************************************************/
 
-// function atMost(array, max, cb) {
-//   let count = 0
-//   for(let ele of array){
-//     if(cb(ele)) count++
-//   }
-//   if(count <= max) return true
-//   return false
-// }
-
 function atMost(array, max, cb) {
- 
+  let count = 0
+  for(let ele of array){
+    if(cb(ele)) count++
+  }
+  if(count <= max) return true
+  return false
 }
+
+// function atMost(array, max, cb) {
+
+// }
 
 let isPositive = function (n) {
     return n > 0;

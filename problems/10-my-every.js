@@ -10,16 +10,16 @@ Examples:
 
 *******************************************************************************/
 
-// function myEvery(array, cb) {
-//     for(let ele of array){
-//         if(!cb(ele)) return false
-//     }
-//     return true
-// }
-
 function myEvery(array, cb) {
-
+    for(let ele of array){
+        if(!cb(ele)) return false
+    }
+    return true
 }
+
+// function myEvery(array, cb) {
+
+// }
 
 let isEven = function (num) {
     return num % 2 === 0;

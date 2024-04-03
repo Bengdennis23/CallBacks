@@ -13,11 +13,26 @@ Examples:
 
 function suffixCipher(sentence, cipher) {
   let arr = []
-  let values = Object.values(cipher)
+  // let keys = Object.keys(cipher)
   let sentenceArr = sentence.split(' ')
-  for(let ele of values){
-    console.log(ele(sentence[0]))
-  }
+    for(let ele of sentenceArr){
+      if(ele.endsWith('ly')) (
+        arr.push(cipher.ly(ele))
+        )
+      else if(ele.endsWith('ize')) {
+        arr.push(cipher.ize(ele))
+      }
+      else if(ele.endsWith('tal')) {
+        arr.push(cipher.tal(ele))
+      }
+      else if(ele.endsWith('s')) {
+        arr.push(cipher.s(ele))
+      }else{
+        arr.push(ele)
+      }
+
+    }
+    return arr.join(' ')
 }
 
 let cipher1 = {

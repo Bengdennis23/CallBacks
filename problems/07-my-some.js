@@ -10,16 +10,16 @@ Examples:
 
 *******************************************************************************/
 
-// function mySome(array, cb) {
-//     for(let i = 0; i < array.length; i++){
-//         if(cb(array[i], i)) return true
-//     }
-//      return false
-// }
-
 function mySome(array, cb) {
-   
+    for(let i = 0; i < array.length; i++){
+        if(cb(array[i], i)) return true
+    }
+     return false
 }
+
+// function mySome(array, cb) {
+
+// }
 
 let result1 = mySome([5, 1, 7, 9], function(ele, i) {
     return ele === i;

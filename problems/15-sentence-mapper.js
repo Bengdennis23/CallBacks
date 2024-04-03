@@ -8,18 +8,18 @@ Examples:
 
 *******************************************************************************/
 
-// let sentenceMapper = function (sentence, cb) {
-//   let arr = []
-//   let sentenceArr = sentence.split(' ')
-//   for(let ele of sentenceArr){
-//     arr.push(cb(ele))
-//   }
-//   return arr.join(' ')
-// };
-
 let sentenceMapper = function (sentence, cb) {
-  
+  let arr = []
+  let sentenceArr = sentence.split(' ')
+  for(let ele of sentenceArr){
+    arr.push(cb(ele))
+  }
+  return arr.join(' ')
 };
+
+// let sentenceMapper = function (sentence, cb) {
+
+// };
 
 let result1 = sentenceMapper("what is the answer?", function(word) {
     return word.toUpperCase() + "!";

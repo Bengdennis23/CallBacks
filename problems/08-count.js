@@ -8,17 +8,17 @@ Examples:
 
 *******************************************************************************/
 
-// function count(array, cb) {
-//   let count = 0
-//   for(let ele of array){
-//     if(cb(ele)) count++
-//   }
-//   return count
-// }
-
 function count(array, cb) {
- 
+  let count = 0
+  for(let ele of array){
+    if(cb(ele)) count++
+  }
+  return count
 }
+
+// function count(array, cb) {
+
+// }
 
 let result1 = count([18, 5, 32, 7, 100], function (n) {
     return n % 2 === 0;

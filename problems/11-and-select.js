@@ -9,19 +9,19 @@ Examples:
 
 *******************************************************************************/
 
-// function andSelect(array, cb1, cb2) {
-//   let newArr = []
-//   for(let ele of array){
-//     if(cb1(ele) && cb2(ele)){
-//       newArr.push(ele)
-//     }
-//   }
-//   return newArr
-// }
-
 function andSelect(array, cb1, cb2) {
-
+  let newArr = []
+  for(let ele of array){
+    if(cb1(ele) && cb2(ele)){
+      newArr.push(ele)
+    }
+  }
+  return newArr
 }
+
+// function andSelect(array, cb1, cb2) {
+
+// }
 
 let isEven = function (n) {
     return n % 2 === 0;

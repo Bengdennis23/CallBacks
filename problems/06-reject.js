@@ -13,17 +13,17 @@ Examples:
 
 *******************************************************************************/
 
-// function reject(array, cb) {
-//   let arr = []
-//   for(let ele of array){
-//     if(!cb(ele)) arr.push(ele)
-//   }
-//   return arr
-// }
-
 function reject(array, cb) {
-  
+  let arr = []
+  for(let ele of array){
+    if(!cb(ele)) arr.push(ele)
+  }
+  return arr
 }
+
+// function reject(array, cb) {
+
+// }
 
 let isEven = function(n) {
     return n % 2 === 0;

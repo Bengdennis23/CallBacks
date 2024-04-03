@@ -9,16 +9,16 @@ Examples:
 
 *******************************************************************************/
 
-// function firstIndex(array, cb) {
-//   for(let i = 0; i < array.length; i++){
-//     if(cb(array[i])) return i
-//   }
-//   return -1
-// }
-
 function firstIndex(array, cb) {
-  
+  for(let i = 0; i < array.length; i++){
+    if(cb(array[i])) return i
+  }
+  return -1
 }
+
+// function firstIndex(array, cb) {
+
+// }
 
 let result1 = firstIndex([3, 7, 8, 10], function (n) {
     return n % 2 === 0;
