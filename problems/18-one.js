@@ -6,6 +6,21 @@ or not exactly one element of the array results in true when passed into the cal
 
 Examples:
 
+
+*******************************************************************************/
+
+// function one(array, cb) {
+//   let count = 0
+//   for(let i = 0; i < array.length; i++){
+//     if(cb(array[i], i)) count++
+//   }
+//   if(count === 1) return true
+//   return false
+// }
+
+function one(array, cb) {
+  
+}
 let result1 = one(['x', 'y', 'z'], function(el) {
     return el === 'a';
 });
@@ -35,12 +50,6 @@ let result6 = one(['apple', 'dog', 'food', 'cat'], function(el, idx) {
     return el.length === idx;
 });
 console.log(result6);   // true
-*******************************************************************************/
-
-function one(array, cb) {
-  // Your code here 
-}
-
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
   module.exports = one;
