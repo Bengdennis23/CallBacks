@@ -10,6 +10,21 @@ the accumulator should be set to the result of the callback.
 
 Examples:
 
+
+*******************************************************************************/
+
+// function mySimpleReduce(array, cb) {
+//  let sum = array[0]
+//  for(let i = 1; i < array.length; i++){
+//     sum = cb(sum, array[i])
+//  }
+//  return sum
+// }
+
+function mySimpleReduce(array, cb) {
+
+ }
+
 let result1 = mySimpleReduce([5, 3, 2, 4], function(sum, el) {
     return sum + el;
 });
@@ -28,12 +43,6 @@ let result3 = mySimpleReduce([4, 6, 2, 8, 3], function(max, el) {
     }
 });
 console.log(result3); // 8
-*******************************************************************************/
-
-function mySimpleReduce(array, cb) {
-  // Your code here 
-}
-
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
   module.exports = mySimpleReduce;
